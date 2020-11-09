@@ -1,6 +1,30 @@
-<h1>Today's weather in {{name}}: {{temp}} *C</h1>
+<br><br>
+<h2 class= "heading1">Current weather in {{name}}: {{data.temp}} C</h1>
+<br><br>
+<div class=holding>
 
-<ul>{{#each data}}
+              <div class= "container1">
+                     <h3 class="box1">Temp.: {{data.temp1}}&nbspC</h3>
+                     <h3 class="box1"> Feels Like: {{data.feelslike1}}&nbspC</h3>
+                     <h3 class="box1"> Maximum: {{data.max}}&nbspC</h3>
+
+              </div>
+
+              <div class= "container2">
+                     <h3 id="description1" class="box2"> {{data.description}}&nbspC</h3>
+                     <img class="icon" src="{{data.iconURL}}"></img>
+              </div>
+
+              <div class= "container3">
+                     <h3 class="box3">Wind Speed: {{data.windmph}}&nbspmph</h3>
+                     <h3 class="box3" id="sunset">&nbsp;&nbsp;&nbsp; Sunset: {{data.date2}}</h3>
+              </div>
+
+</div>
+
+{{!-- <ul>{{#each data}}
             <li>{{@key}} : {{this}}</li>
-        {{/each}}</ul>
+        {{/each}}</ul> --}}
+
 <a class="btn-style" href="/weather">What's the weather?</a>
+

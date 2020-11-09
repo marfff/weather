@@ -3,6 +3,7 @@ const hbs = require('express-handlebars');
 const path = require('path');
 const bodyParser = require('body-parser');
 
+
 const indexRouter = require('./routes/indexRouter');
 const weatherRouter = require('./routes/weatherRouter');
 const errRouter = require('./routes/errRouter');
